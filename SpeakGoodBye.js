@@ -5,12 +5,12 @@
 // See Lecture 52, part 2
 
 (function (window) {
-  var byeSpeaker = {};
-  byeSpeaker.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-  var speak = "Good Bye ";
-  byeSpeaker.speak = function () {
-    console.log(speak + byeSpeaker.names);
-  };
+  var speakWord = "Good Bye ";
+  var byeSpeaker = {
+    speak: function (name) {
+      console.log(speakWord + " " + name);
+  }
+};
 
   window.byeSpeaker = byeSpeaker;
 
